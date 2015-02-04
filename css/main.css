@@ -16,6 +16,10 @@ html {
   text-size-adjust: 100%;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 .body {
     margin: 0;
     padding: 0;
@@ -38,13 +42,16 @@ html {
     margin-left: auto;
     margin-right: auto;
     color: white;
+    position:relative;
+    z-index: 1000;
 }
 
 .bj-wrapper {
     position: relative;
-    width: 100%;
-    top: 120px;
-    left: calc(50% - 368px);
+    width: 200px;
+    top: -30px;
+    left: calc(50% - 100px);
+    height: 200px; 
 }
 
 .bj-wrapper,
@@ -56,21 +63,19 @@ html {
 .bj-wrapper:hover,
 .bj-wrapper:focus,
 .bj-wrapper:active {
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(-11deg);
 }
 
 .bj {
     width: 130px;
     position: absolute;
-    left: 36%;
-    top: -140px;
+    left: 30px;
+    top: 40px;
 }
 
 .stitches {
     width: 200px;
     position: absolute;
-    left: 32%;
-    top: -180px;
     animation: rotate 30s infinite;
 }
 
@@ -89,31 +94,33 @@ html {
     background-size: cover;
     background-position: center center;
     background-image: url(../images/brendan-billboard.jpg);
-    height: 100%;
+    width: 100%;
     height: 100vh; 
+    overflow: hidden;
+    position: relative;
 }
 
 .hello {
-    margin: 0 auto;
     list-style-type: none;
-    line-height: 1.5em;
-    border-radius: 2.2em;
+    line-height: 5em;
+    border-radius: 3em;
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
-    font-weight: bold;
     display: block;
     background-color: none;
     position: absolute;
     font-weight: lighter;
-    left: calc(50% - 301px);
-    top: 475px;
+    top: 275px;
     color: black;
+    
 }
 
 .hello ul, li {
-        display: inline-block;
+    display: inline-block;
+    padding: .5em;
 }
+
 .hello a,
 .hello a:link,
 .hello a:visited {
@@ -121,6 +128,8 @@ html {
     text-decoration: none;
     color: white;
     text-align: center;
+    font-weight: lighter;
+    overflow: hidden;
 }
 
 .hello a:hover,
@@ -130,20 +139,22 @@ html {
     color: black;  
     line-height: 3em;
     border-radius: 6em;
-    padding: 2.2em;
+    padding: 1em;
     text-align: center;
-    
+    font-weight: lighter; 
+    color: black;
 }
 
 .shadows {
-    background-image: url(../images/shadows.png); 
-    background-repeat: repeat;
+    background-image: url(../images/shadows.svg); 
+    background-size: 466px 310px;
     width: 100%;
-    height: 100%;
+    height: calc(100vh + 310px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
-    top: 250px;  
+    top: 0;
+    left: 0;
     overflow: hidden;
 }
 
@@ -152,7 +163,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-300px)
+    -webkit-transform: translateY(-310px)
     }
 }
 
@@ -161,14 +172,11 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-300px)
+    transform: translateY(-310px)
     }
 }
 
 .button {
-    width: 6em;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 1.5em;
     border-radius: .2em;
     text-decoration: none;
@@ -176,33 +184,11 @@ html {
     text-transform: capitalize;
     font-weight: bold;
     display: inline-block;
-    background-color: #1b7aa1;
-    border: 0;
 }
 
-.button:hover,
-.button:focus,
-.button:active 
-.button .nav-current,
-.button .nav-current:link,
-.button .nav-current:visited {
-    background-color: orange;
-    color: #fff;  
-}
 
 .nav-top li {
         display: inline-block;
-}
-
-.nav-top ul { 
-	margin: 0;
-    list-style-type: none;
-    background: none;
-    padding: .5em;
-    font-size: 1rem;
-    font-weight: lighter;
-    display: block;
-    text-align: center;
 }
 
 .nav-top a,
@@ -213,17 +199,6 @@ html {
 	color: #fff;
 	text-decoration: none;
     text-align: center;
-}
-
-.nav-top a:hover,
-.nav-top a:focus,
-.nav-top a:active 
-.nav-top .nav-current,
-.nav-top .nav-current:link,
-.nav-top .nav-current:visited {
-    background-color: orange;
-    color: #fff; 
-    border-radius: .2em;
 }
 
 .rtt {
