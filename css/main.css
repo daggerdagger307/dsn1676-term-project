@@ -73,21 +73,6 @@ html {
     top: 40px;
 }
 
-.stitches {
-    width: 200px;
-    position: absolute;
-    animation: rotate 30s infinite;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .billboard {
     padding: 12%;
     background-repeat: no-repeat;
@@ -173,6 +158,32 @@ html {
     100% {
     transform: translateY(-310px)
     }
+}
+
+.stitches {
+    width: 200px;
+    position: absolute;
+    -webkit-animation: rotate 30s infinite;
+    animation: rotate 30s infinite;
+}
+
+@keyframes rotate {
+    from {
+    -webkit-transform: rotate(0deg);
+    }
+    to {
+    -webkit-transform: rotate(360deg);
+    }
+}
+    
+    @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
 }
 
 .button {
