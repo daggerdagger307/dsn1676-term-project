@@ -57,7 +57,7 @@ html {
 .bj-wrapper,
 .bj-wrapper:link,
 .bj-wrapper:visited {
-  transition: all 2000ms ease-in-out 10ms;
+    transition: all 2000ms ease-in-out 10ms;
 }
 
 .bj-wrapper:hover,
@@ -113,7 +113,6 @@ html {
     font-weight: lighter;
     top: 275px;
     color: black;
-    
 }
 
 .hello ul, li {
@@ -188,7 +187,7 @@ html {
 
 
 .nav-top li {
-        display: inline-block;
+    display: inline-block;
 }
 
 .nav-top a,
