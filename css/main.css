@@ -96,7 +96,7 @@ html {
     background-color: none;
     position: absolute;
     font-weight: lighter;
-    top: 275px;
+    top: 295px;
     color: black;
     left: calc(50% - 263px);
 }
@@ -104,6 +104,7 @@ html {
 .hello ul, li {
     display: inline-block;
     padding: 0;
+    margin: 0 auto;
 }
 
 .hello a,
@@ -176,13 +177,12 @@ html {
     -webkit-transform: rotate(360deg);
     }
 }
-    
     @keyframes rotate {
     from {
-        transform: rotate(0deg);
+    transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+    transform: rotate(360deg);
     }  
 }
 
