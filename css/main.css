@@ -1,0 +1,270 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-width: 15em;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.header{
+    display: block;
+    width: 100%;
+    background-color: black;
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: repeat;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.bj-wrapper {
+    margin: auto 0;
+    position: relative;
+    width: 100%;
+    top: 120px;
+    align-content: center;
+}
+
+.bj-wrapper,
+.bj-wrapper:link,
+.bj-wrapper:visited {
+  transition: top 2000ms ease-in-out 10ms;
+}
+
+.bj-wrapper:hover,
+.bj-wrapper:focus,
+.bj-wrapper:active {
+   top: 140px;
+}
+
+.bj {
+    width: 130px;
+    position: absolute;
+    left: 36%;
+    top: -140px;
+}
+
+.stitches {
+    width: 200px;
+    position: absolute;
+    left: 32%;
+    top: -180px;
+    animation: rotate 30s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.billboard {
+    padding: 12%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/brendan-billboard.jpg);
+    height: 100%;
+    height: 100vh; 
+}
+
+.hello {
+    width: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+    border-radius: 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    background-color: none;
+    border: 0;
+    position: absolute;
+    left: 35%;
+    top: 475px;
+    color: black;
+}
+
+.hello,
+.hello:link,
+.hello:visited {
+    transition: all 1000ms ease-in-out 10ms;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.hello:hover,
+.hello:focus,
+.hello:active {
+    background-color: white;
+    color: white;  
+    line-height: 3em;
+    border-radius: 6em;
+    padding-top: 2.2em;
+    padding-bottom: 2.2em;
+    
+}
+
+.shadows {
+    background-image: url(../images/shadows.png); 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: shadows 15s ease-in-out infinite alternate;
+    animation: shadows 15s ease-in-out infinite alternate;
+    position: absolute;
+    top: 100px;
+    left: 20%;  
+    overflow: hidden;
+}
+
+@-webkit-keyframes shadows {
+    0% {
+    -webkit-transform: translateY(0px);
+    }
+    100% {
+    -webkit-transform: translateY(-600px)
+    }
+}
+
+@keyframes shadows {
+    0% {
+    transform: translateY(0px);
+    }
+    100% {
+    transform: translateY(-600px)
+    }
+}
+
+.button {
+    width: 6em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+    border-radius: .2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #1b7aa1;
+    border: 0;
+}
+
+.button:hover,
+.button:focus,
+.button:active 
+.button .nav-current,
+.button .nav-current:link,
+.button .nav-current:visited {
+    background-color: orange;
+    color: #fff;  
+}
+
+.nav-top li {
+        display: inline-block;
+}
+
+.nav-top ul { 
+	margin: 0;
+    list-style-type: none;
+    background: none;
+    padding: .5em;
+    font-size: 1rem;
+    font-weight: lighter;
+    display: block;
+    text-align: center;
+}
+
+.nav-top a,
+.nav-top a:link,
+.nav-top a:visited {
+	display: inline-block;
+	font-size: 1.25em;
+	color: #fff;
+	text-decoration: none;
+    text-align: center;
+}
+
+.nav-top a:hover,
+.nav-top a:focus,
+.nav-top a:active 
+.nav-top .nav-current,
+.nav-top .nav-current:link,
+.nav-top .nav-current:visited {
+    background-color: orange;
+    color: #fff; 
+    border-radius: .2em;
+}
+
+.skip-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: #222;
+    color: #fff;
+    padding: 0.5em 0.75em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+.rtt {
+    position: fixed;
+    bottom: 1em;
+    left: -1em;
+    width: 5em;
+    height: auto;
+}
+
+.byline {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+.byline2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
