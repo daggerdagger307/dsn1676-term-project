@@ -22,10 +22,9 @@ html {
 }
 
 .logo {
-    max-width: 15em;
+    max-width: 12.5em;
     display: block;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 
@@ -42,23 +41,22 @@ html {
 }
 
 .bj-wrapper {
-    margin: auto 0;
     position: relative;
     width: 100%;
     top: 120px;
-    align-content: center;
+    left: calc(50% - 368px);
 }
 
 .bj-wrapper,
 .bj-wrapper:link,
 .bj-wrapper:visited {
-  transition: top 2000ms ease-in-out 10ms;
+  transition: all 2000ms ease-in-out 10ms;
 }
 
 .bj-wrapper:hover,
 .bj-wrapper:focus,
 .bj-wrapper:active {
-   top: 140px;
+    transform: scale(1.5);
 }
 
 .bj {
@@ -96,55 +94,56 @@ html {
 }
 
 .hello {
-    width: 6em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    list-style-type: none;
     line-height: 1.5em;
-    border-radius: 2em;
+    border-radius: 2.2em;
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
     font-weight: bold;
-    display: inline-block;
+    display: block;
     background-color: none;
-    border: 0;
     position: absolute;
-    left: 35%;
+    font-weight: lighter;
+    left: calc(50% - 301px);
     top: 475px;
     color: black;
 }
 
-.hello,
-.hello:link,
-.hello:visited {
+.hello ul, li {
+        display: inline-block;
+}
+.hello a,
+.hello a:link,
+.hello a:visited {
     transition: all 1000ms ease-in-out 10ms;
     text-decoration: none;
     color: white;
-    
+    text-align: center;
 }
 
-.hello:hover,
-.hello:focus,
-.hello:active {
+.hello a:hover,
+.hello a:focus,
+.hello a:active {
     background-color: white;
-    color: white;  
+    color: black;  
     line-height: 3em;
     border-radius: 6em;
-    padding-top: 2.2em;
-    padding-bottom: 2.2em;
+    padding: 2.2em;
+    text-align: center;
     
 }
 
 .shadows {
     background-image: url(../images/shadows.png); 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: 100%;
     height: 100%;
-    -webkit-animation: shadows 15s ease-in-out infinite alternate;
-    animation: shadows 15s ease-in-out infinite alternate;
+    -webkit-animation: shadows 15s linear infinite;
+    animation: shadows 15s linear infinite;
     position: absolute;
-    top: 100px;
-    left: 20%;  
+    top: 250px;  
     overflow: hidden;
 }
 
@@ -153,7 +152,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-600px)
+    -webkit-transform: translateY(-300px)
     }
 }
 
@@ -162,7 +161,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-600px)
+    transform: translateY(-300px)
     }
 }
 
@@ -225,26 +224,6 @@ html {
     background-color: orange;
     color: #fff; 
     border-radius: .2em;
-}
-
-.skip-links {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.skip-links a {
-    position: absolute;
-    top: -3em;
-    background-color: #222;
-    color: #fff;
-    padding: 0.5em 0.75em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.skip-links a:focus {
-    top: 0;
 }
 
 .rtt {
