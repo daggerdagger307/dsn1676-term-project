@@ -247,14 +247,14 @@ html {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 340px 220px;
+    background-size: 340px 210px;
     width: 340px;
-    height: calc(100vh + 220px);
+    height: calc(100vh + 210px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
     top: 0;
-    right: 8px;
+    right: 15px;
     overflow: hidden;
     background-repeat: repeat-y;
 }
@@ -264,7 +264,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-220px)
+    -webkit-transform: translateY(-210px)
     }
 }
 
@@ -273,18 +273,18 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-220px)
+    transform: translateY(-210px)
     }
 }
  
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 60em) {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 350px 230px;
+    background-size: 340px 210px;
     width: 340px;
-    height: calc(100vh + 230px);
+    height: calc(100vh + 210px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
@@ -299,7 +299,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-230px)
+    -webkit-transform: translateY(-210px)
     }
 }
 
@@ -308,22 +308,22 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-230px)
+    transform: translateY(-210px)
     }
 }
     
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 540px 330px;
-    width: 540px;
+    background-size: 500px 300px;
+    width: 500px;
     height: calc(100vh + 330px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
     top: 0;
-    right: 5px;
+    right: 15px;
     overflow: hidden;
     background-repeat: repeat-y;
 }
@@ -333,7 +333,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-330px)
+    -webkit-transform: translateY(-300px)
     }
 }
 
@@ -342,7 +342,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-330px)
+    transform: translateY(-300px)
     }
 }
  
