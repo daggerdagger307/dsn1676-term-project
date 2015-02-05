@@ -132,16 +132,17 @@ html {
 }
 
 .shadows {
-    background-image: url(../images/shadows.svg); 
-    background-size: 466px 310px;
+    background-image: url(../images/shadowstest.svg); 
+    background-size: 426px 283px;
     width: 100%;
-    height: calc(100vh + 310px);
+    height: calc(100vh + 283.5px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 590px;
     overflow: hidden;
+    background-repeat: repeat-y;
 }
 
 @-webkit-keyframes shadows {
@@ -149,7 +150,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-310px)
+    -webkit-transform: translateY(-283.5px)
     }
 }
 
@@ -158,7 +159,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-310px)
+    transform: translateY(-283.5px)
     }
 }
 
