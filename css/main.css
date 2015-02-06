@@ -134,14 +134,14 @@ html {
 
 .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 450px 200px;
-    width: 400px;
-    height: calc(100vh + 200px);
+    background-size: 450px 210px;
+    width: 450px;
+    height: calc(100vh + 210px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
     top: 0;
-    right: -10px;
+    right: -50px;
     overflow: hidden;
     background-repeat: repeat-y;
 }
@@ -151,7 +151,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-200px)
+    -webkit-transform: translateY(-210px)
     }
 }
 
@@ -160,7 +160,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-200px)
+    transform: translateY(-210px)
     }
 }
 
@@ -247,9 +247,9 @@ html {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 340px 210px;
-    width: 340px;
-    height: calc(100vh + 210px);
+    background-size: 400px 200px;
+    width: 400px;
+    height: calc(100vh + 200px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
@@ -264,7 +264,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-210px)
+    -webkit-transform: translateY(-200px)
     }
 }
 
@@ -273,7 +273,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-210px)
+    transform: translateY(-200px)
     }
 }
  
@@ -282,9 +282,9 @@ html {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 340px 210px;
+    background-size: 340px 220px;
     width: 340px;
-    height: calc(100vh + 210px);
+    height: calc(100vh + 220px);
     -webkit-animation: shadows 15s linear infinite;
     animation: shadows 15s linear infinite;
     position: absolute;
@@ -299,7 +299,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-210px)
+    -webkit-transform: translateY(-220px)
     }
 }
 
@@ -308,7 +308,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-210px)
+    transform: translateY(-220px)
     }
 }
     
@@ -316,7 +316,7 @@ html {
     
     .shadows {
     background-image: url(../images/shadowstest.svg); 
-    background-size: 500px 300px;
+    background-size: 500px 330px;
     width: 500px;
     height: calc(100vh + 330px);
     -webkit-animation: shadows 15s linear infinite;
@@ -333,7 +333,7 @@ html {
     -webkit-transform: translateY(0px);
     }
     100% {
-    -webkit-transform: translateY(-300px)
+    -webkit-transform: translateY(-330px)
     }
 }
 
@@ -342,7 +342,7 @@ html {
     transform: translateY(0px);
     }
     100% {
-    transform: translateY(-300px)
+    transform: translateY(-330px)
     }
 }
  
