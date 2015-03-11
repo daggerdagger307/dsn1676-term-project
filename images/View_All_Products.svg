@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 171.1 43.2" style="enable-background:new 0 0 171.1 43.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'AvantGarde-Book';}
+	.st3{font-size:12;}
+</style>
+<g id="View_x5F_All_x5F_Products">
+	<g>
+		
+			<image style="overflow:visible;opacity:0.41;" width="713" height="180" xlink:href="64B04B6A965AF730.png"  transform="matrix(0.24 0 0 0.24 0 0)">
+		</image>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="84" y1="4.5" x2="84" y2="35.5">
+				<stop  offset="0" style="stop-color:#F47C6E"/>
+				<stop  offset="0.4858" style="stop-color:#F1697D"/>
+				<stop  offset="1" style="stop-color:#EF5388"/>
+			</linearGradient>
+			<path class="st0" d="M163.5,30.7c0,2.6-2.1,4.8-4.8,4.8H9.3c-2.6,0-4.8-2.1-4.8-4.8V9.3c0-2.6,2.1-4.8,4.8-4.8h149.5
+				c2.6,0,4.8,2.1,4.8,4.8V30.7z"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 25 24)" class="st1 st2 st3">VIEW ALL PRODUCTS</text>
+</g>
+</svg>
