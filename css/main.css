@@ -31,6 +31,10 @@ html {
     margin: 0 auto;
 }
 
+.logo img {
+    width: 100%;
+}
+
 
 .header{
     display: block;
@@ -167,12 +171,13 @@ html {
     display: inline-block;
     margin: 0 auto;
     position: relative;
+    z-index: 100000;
 }
 
 .hello a,
 .hello a:link,
 .hello a:visited {
-    transition: all 1000ms ease-in-out 10ms;
+    transition: all 500ms ease-in-out 10ms;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -186,9 +191,7 @@ html {
     box-sizing: content-box;
 }
 
-.hello a:hover,
-.hello a:focus,
-.hello a:active {
+.hello a:hover {
     background-color: white;
     color: black;
     text-align: center;

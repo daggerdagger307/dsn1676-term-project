@@ -26,3 +26,7 @@ $thumbs.on('click', 'a', function (e) {
 $btnClose.on('click', function () {
     $lb.attr('data-state', 'hidden');
 });
+
+$('.smooth').localScroll({
+            duration: 1200       
+});
