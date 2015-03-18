@@ -58,7 +58,7 @@ html {
 	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
 	text-indent: 100%;
 	white-space: nowrap; 
-    background-color: white;
+    
 }
 
 /* Dropdown Menu */
@@ -99,6 +99,11 @@ html {
     text-align: center;
     text-decoration: none;
     margin: 0 auto;
+}
+
+.button-grid li {
+    padding: 1em;
+
 }
 
 .bj-wrapper {
@@ -172,11 +177,11 @@ html {
     text-align: center;
     font-weight: lighter;
     overflow: hidden;
-    width: 6em;
-    line-height: 6em;
+    width: 3em;
+    line-height: 3em;
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid transparent;
+    border: 5px solid transparent;
     box-sizing: content-box;
 }
 
