@@ -166,6 +166,7 @@ html {
 .more {
     display: inline-block;
     margin: 0 auto;
+    position: relative;
 }
 
 .hello a,
@@ -312,7 +313,7 @@ html {
 }
 
 .hat-background {
-     padding: 12%;
+    padding: 12%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -328,6 +329,13 @@ html {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    position: relative;
+    top: calc(50vh - 350px);
+     -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
 }
 
 .thumbnails li {
@@ -344,10 +352,10 @@ html {
     right: -100%;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     z-index: 30000;
     opacity: 0;
-    transition: all 450ms ease-out;
+    transition: all 450ms ease-in-out;
     
 }
 .lightbox-img {
@@ -381,9 +389,16 @@ html {
     .bj-wrapper {
     position: relative;
     width: 200px;
-    top: -35px;
+    top: -80px;
     left: calc(50% - 100px);
     height: 200px; 
+}
+    
+    .more {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
 }
     
     .shadows {
