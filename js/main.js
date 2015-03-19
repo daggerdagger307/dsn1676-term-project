@@ -4,6 +4,7 @@ var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose = $('.btn-close');
+var $fade =$('.fade');
 
 document.querySelector('.nav-btn').addEventListener('click', function (e) {
     e.preventDefault();
@@ -30,3 +31,12 @@ $btnClose.on('click', function () {
 $('.smooth').localScroll({
             duration: 1200       
 });
+
+$fade.waypoint(function (direction) {
+    console.log('check')
+    if (direction == 'down') {
+    $fade.addClass('js-fade');
+    } else {
+    $fade.removeClass('js-fade');
+    }
+}, { offset: '50%' });
