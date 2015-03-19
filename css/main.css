@@ -364,6 +364,9 @@ html {
     background-color: rgba(0,0,0,0.6);
     z-index: 30000;
     opacity: 0;
+    -moz-transition: all 450ms ease-in-out;
+    -o-transition: all 450ms ease-in-out;
+    -webkit-transition: all 450ms ease-in-out;
     transition: all 450ms ease-in-out;
 }
 
