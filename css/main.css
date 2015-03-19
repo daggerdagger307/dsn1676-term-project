@@ -35,7 +35,6 @@ html {
     width: 100%;
 }
 
-
 .header{
     display: block;
     width: 100%;
@@ -62,7 +61,6 @@ html {
 	background: transparent url("../images/icon-nav.svg") no-repeat 0 0;
 	text-indent: 100%;
 	white-space: nowrap; 
-    
 }
 
 /* Dropdown Menu */
@@ -107,7 +105,6 @@ html {
 
 .button-grid li {
     padding: 1em;
-
 }
 
 .bj-wrapper {
@@ -311,8 +308,7 @@ html {
     background-image: url(../images/shadow-split.svg);
     z-index: 20000;
     position: absolute;
-    top: calc(100vh - 96px);
-        
+    top: calc(100vh - 96px);     
 }
 
 .hat-background {
@@ -359,8 +355,8 @@ html {
     z-index: 30000;
     opacity: 0;
     transition: all 450ms ease-in-out;
-    
 }
+
 .lightbox-img {
     display: block;
     width: 100%;
@@ -390,32 +386,32 @@ html {
 @media only screen and (min-width: 38em) {
     
     .bj-wrapper {
-    position: relative;
-    width: 200px;
-    top: -80px;
-    left: calc(50% - 100px);
-    height: 200px; 
+        position: relative;
+        width: 200px;
+        top: -80px;
+        left: calc(50% - 100px);
+        height: 200px; 
 }
     
     .more {
-    display: inline-block;
-    margin: 0 auto;
-    position: relative;
-    top: -80px;
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        top: -80px;
 }
     
     .shadows {
-    background-image: url(../images/shadowstest.svg); 
-    background-size: 400px 200px;
-    width: 400px;
-    height: calc(100vh + 200px);
-    -webkit-animation: shadows 15s linear infinite;
-    animation: shadows 15s linear infinite;
-    position: absolute;
-    top: 0;
-    right: 15px;
-    overflow: hidden;
-    background-repeat: repeat-y;
+        background-image: url(../images/shadowstest.svg); 
+        background-size: 400px 200px;
+        width: 400px;
+        height: calc(100vh + 200px);
+        -webkit-animation: shadows 15s linear infinite;
+        animation: shadows 15s linear infinite;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        overflow: hidden;
+        background-repeat: repeat-y;
 }
 
 @-webkit-keyframes shadows {
@@ -440,17 +436,17 @@ html {
 @media only screen and (min-width: 60em) {
     
     .shadows {
-    background-image: url(../images/shadowstest.svg); 
-    background-size: 340px 220px;
-    width: 340px;
-    height: calc(100vh + 220px);
-    -webkit-animation: shadows 15s linear infinite;
-    animation: shadows 15s linear infinite;
-    position: absolute;
-    top: 0;
-    right: 30px;
-    overflow: hidden;
-    background-repeat: repeat-y;
+        background-image: url(../images/shadowstest.svg); 
+        background-size: 340px 220px;
+        width: 340px;
+        height: calc(100vh + 220px);
+        -webkit-animation: shadows 15s linear infinite;
+        animation: shadows 15s linear infinite;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        overflow: hidden;
+        background-repeat: repeat-y;
 }
 
 @-webkit-keyframes shadows {
@@ -474,17 +470,17 @@ html {
 @media only screen and (min-width: 70em) {
     
     .shadows {
-    background-image: url(../images/shadowstest.svg); 
-    background-size: 500px 330px;
-    width: 500px;
-    height: calc(100vh + 330px);
-    -webkit-animation: shadows 15s linear infinite;
-    animation: shadows 15s linear infinite;
-    position: absolute;
-    top: 0;
-    right: 15px;
-    overflow: hidden;
-    background-repeat: repeat-y;
+        background-image: url(../images/shadowstest.svg); 
+        background-size: 500px 330px;
+        width: 500px;
+        height: calc(100vh + 330px);
+        -webkit-animation: shadows 15s linear infinite;
+        animation: shadows 15s linear infinite;
+        position: absolute;
+        top: 0;
+        right: 15px;
+        overflow: hidden;
+        background-repeat: repeat-y;
 }
 
 @-webkit-keyframes shadows {
