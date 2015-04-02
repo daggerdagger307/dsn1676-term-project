@@ -17,6 +17,13 @@ document.querySelector('.nav-btn').addEventListener('click', function (e) {
   }
 });
 
+$('.button-grid').on('click', 'a', function(e) {
+    e.preventDefault();
+    console.log('clicked link');
+    navtop.setAttribute('data-state', 'collapsed');
+    this.setAttribute('data-state', 'inactive');
+});
+
 $thumbs.on('click', 'a', function (e) {
     e.preventDefault();
     var big = $(this).attr('href');
@@ -29,7 +36,13 @@ $btnClose.on('click', function () {
 });
 
 $('.smooth').localScroll({
-            duration: 1200       
+    target:'body'
+//            duration: 1200       
+});
+
+$('.rtt').localScroll({
+    target:'body'
+//            duration: 1200       
 });
 
 $fade.waypoint(function (direction) {
