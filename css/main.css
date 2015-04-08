@@ -448,7 +448,44 @@ html {
     overflow: hidden;
     position: relative;
     right: 0;
+    align-content: center;
+    text-align: center;
 }
+
+.knives {
+    max-width: 30em;
+    margin: 0 auto;
+    fill: white;
+    align-content: center;
+    -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+}
+
+#dagger-left {
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+#dagger-right {
+    transform: rotate(0deg);
+    transform-origin: center center;
+}
+
+.knives :hover #dagger-left {
+    
+    transform: translateX(4em) rotate(45deg);
+    fill: black;
+}
+
+.knives :hover #dagger-right {
+    transform: translateX(-4em) translateY(-.5em) rotate(-45deg);
+    fill: black;
+}
+
+
 
 .contact {
     padding: 12%;
