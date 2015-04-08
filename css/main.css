@@ -199,6 +199,48 @@ html {
     border-color: white;
 }
 
+.rtt {
+    position: fixed;
+    bottom: 1em;
+    left: 2em;
+    width: 5em;
+    height: auto;
+    opacity: 0;
+	transition: all 450ms ease-in;
+}
+
+.js-rtt {
+    opacity: 1;
+}
+
+.rtt a,
+.rtt a:link,
+.rtt a:visited {
+    transition: all 500ms ease-in-out 10ms;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    overflow: hidden;
+    width: 3em;
+    line-height: 3em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: content-box;
+}
+
+.rtt a:hover {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: lighter; 
+    color: black;
+    border-width: 10px;
+    margin-top: -10px;
+    border-color: white;
+}
+
 .shadows {
     background-image: url(../images/shadowstest.svg); 
     background-size: 450px 210px;
@@ -278,14 +320,6 @@ html {
 	color: #fff;
 	text-decoration: none;
     text-align: center;
-}
-
-.rtt {
-    position: fixed;
-    bottom: 1em;
-    left: -1em;
-    width: 5em;
-    height: auto;
 }
 
 .byline {
@@ -453,8 +487,10 @@ html {
 }
 
 .knives {
-    max-width: 30em;
+    max-width: 20em;
     margin: 0 auto;
+    position: relative;
+    top: calc(50vh - 350px);
     fill: white;
     align-content: center;
     -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -462,6 +498,26 @@ html {
     -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    transform: translateY(0);
+    -webkit-animation: bob-pair 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes bob-pair {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+    }
+}
+
+@keyframes bob-pair {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(15px);
+    }
 }
 
 #dagger-left {
@@ -505,29 +561,6 @@ html {
     transition: all 200ms ease-in-out;
 }
 
-.pair {
-    transform: translateY(0);
-    -webkit-animation: bob-pair 3s ease infinite alternate;
-}
-
-@-webkit-keyframes bob-pair {
-    0% {
-        -webkit-transform: translateY(0)
-    }
-    100% {
-        -webkit-transform: translateY(25px);
-    }
-}
-
-@keyframes bob-pair {
-    0% {
-        transform: translateY(0)
-    }
-    100% {
-        transform: translateY(25px);
-    }
-}
-
 .contact {
     padding: 12%;
     background-repeat: no-repeat;
@@ -544,7 +577,7 @@ html {
 .rtt {
     position: fixed;
     bottom: 1em;
-    left: -1em;
+    left: .5em;
     width: 5em;
     height: auto;
     z-index: 300000;

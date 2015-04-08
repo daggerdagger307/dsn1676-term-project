@@ -5,6 +5,7 @@ var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
 var $btnClose = $('.btn-close');
 var $fade =$('.fade');
+var $rtt =$('.rtt');
 
 document.querySelector('.nav-btn').addEventListener('click', function (e) {
     e.preventDefault();
@@ -51,5 +52,14 @@ $fade.waypoint(function (direction) {
     $fade.addClass('js-fade');
     } else {
     $fade.removeClass('js-fade');
+    }
+}, { offset: '50%' });
+
+$rtt.waypoint(function (direction) {
+    console.log('check')
+    if (direction == 'down') {
+    $rtt.addClass('js-rtt');
+    } else {
+    $rtt.removeClass('js-rtt');
     }
 }, { offset: '50%' });
