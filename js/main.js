@@ -3,9 +3,14 @@ var navtop = document.querySelector('.nav-top');
 var $thumbs = $('.thumbnails');
 var $lbImg = $('.lightbox-img');
 var $lb = $('.lightbox');
+var $thumbsV = $('.thumbnails-2');
+var $lbImgV = $('.lightbox-img-2');
+var $lbV = $('.lightbox-2');
 var $btnClose = $('.btn-close');
-var $fade =$('.fade');
-var $rtt =$('.rtt');
+var $btnCloseV = $('.btn-close-2');
+var $fade = $('.fade');
+var $rtt = $('.rtt');
+var $cross = $('.cross');
 
 document.querySelector('.nav-btn').addEventListener('click', function (e) {
     e.preventDefault();
@@ -32,8 +37,19 @@ $thumbs.on('click', 'a', function (e) {
     $lb.attr('data-state', 'visible');
 });
 
+$thumbsV.on('click', 'a', function (e) {
+    e.preventDefault();
+    var big = $(this).attr('href');
+    $lbImgV.attr('src', big);
+    $lbV.attr('data-state', 'visible');
+});
+
 $btnClose.on('click', function () {
     $lb.attr('data-state', 'hidden');
+});
+
+$btnCloseV.on('click', function () {
+    $lbV.attr('data-state', 'hidden');
 });
 
 $('.smooth').localScroll({
@@ -55,6 +71,15 @@ $fade.waypoint(function (direction) {
     }
 }, { offset: '50%' });
 
+$cross.waypoint(function (direction) {
+    console.log('check')
+    if (direction == 'down') {
+    $cross.addClass('js-cross');
+    } else {
+    $cross.removeClass('js-cross');
+    }
+}, { offset: '50%' });
+
 $rtt.waypoint(function (direction) {
     console.log('check')
     if (direction == 'down') {
@@ -63,3 +88,4 @@ $rtt.waypoint(function (direction) {
     $rtt.removeClass('js-rtt');
     }
 }, { offset: '50%' });
+
