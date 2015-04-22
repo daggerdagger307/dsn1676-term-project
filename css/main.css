@@ -552,7 +552,7 @@ html {
 }
 
 .video {
-    padding: 12%;
+    top: calc(50% - 50px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -570,7 +570,6 @@ html {
     max-width: 20em;
     margin: 0 auto;
     position: relative;
-    top: 2em;
     fill: white;
     align-content: center;
     -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -743,7 +742,6 @@ html {
      list-style-type: none;
      overflow: hidden;
      text-decoration: none;
-
 }
 
 .instagram {
@@ -774,7 +772,18 @@ html {
     text-align: center;
 }
 
+.draw {
+	position: relative;
+	top: calc(50% - 150px);
+}
+
+.about-b {
+	position: relative;
+	top: calc(50% - 200px);
+}
+
 @media only screen and (min-width: 38em) {
+
 	
 	.lightbox-img {
     display: block;
@@ -839,21 +848,6 @@ html {
 	.thumbnails-2 {
 	padding: 0;
 	}
-	
-    .bj-wrapper {
-        position: relative;
-        width: 200px;
-        top: 40px;
-        left: calc(50% - 100px);
-        height: 200px; 
-}
-    
-    .more {
-        display: inline-block;
-        margin: 0 auto;
-        position: relative;
-        top: 80px;
-}
     
     .shadows {
         background-image: url(../images/shadowstest.svg); 
@@ -888,6 +882,7 @@ html {
 }
 	
 @media only screen and (min-width: 60em) {
+
 	
 	.cross {
     top: 5em;
@@ -942,8 +937,9 @@ html {
         top: 0;
         right: 15px;
         overflow: hidden;
-        background-repeat: repeat-y;
+        background-repeat: repeat-y;		
 }
+
 
 @-webkit-keyframes shadows {
     0% {
