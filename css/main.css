@@ -20,6 +20,7 @@ html {
     box-sizing: inherit;
 }
 
+
 .body {
     margin: 0;
     padding: 0;
@@ -427,7 +428,7 @@ html {
 
 .lightbox-img {
     display: block;
-    width: 200%;
+    width: 100%;
 }
 
 .lightbox-content {
@@ -449,6 +450,80 @@ html {
     right: 15px;
     bottom: 15px;
     top: 15px;
+}
+
+.btn-close-2 {
+    line-height: 1.5em;
+    border-radius: .2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-close-2 {
+    transition: all 500ms ease-in-out 10ms;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    overflow: hidden;
+    width: 3em;
+	height: 3em;
+    line-height: 3.5em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: content-box;
+}
+
+.btn-close-2:hover {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: lighter; 
+    color: black;
+    border-width: 10px;
+    margin-top: -10px;
+    border-color: white;
+}
+
+.btn-close {
+    line-height: 1.5em;
+    border-radius: .2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-close {
+    transition: all 500ms ease-in-out 10ms;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    overflow: hidden;
+    width: 3em;
+	height: 3em;
+    line-height: 3.5em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: content-box;
+}
+
+.btn-close:hover {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: lighter; 
+    color: black;
+    border-width: 10px;
+    margin-top: -10px;
+    border-color: white;
 }
 
 .lightbox-2 {
@@ -602,29 +677,23 @@ html {
 #dagger-left {
     transform: rotate(0deg);
     transform-origin: 204px 239px;
+	transition: all 500ms ease-in-out;
 }
 
 #dagger-right {
     transform: rotate(0deg);
     transform-origin: 204px 239px;
+	transition: all 500ms ease-in-out;
 }
 
 /* remove js-cross after milestones */
 
 .js-cross #dagger-left {
-    fill: black;
-	 -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    fill: black;    
 }
 
 .js-cross #dagger-right {  
     fill: black;
-	 -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
  }
 
 #dagger-dagger {
@@ -658,6 +727,8 @@ html {
 	margin: auto 0;
 	color: white;
 	text-align: left;
+	position: relative;
+	top: calc(50% - 300px);
 	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -783,8 +854,11 @@ html {
 }
 
 @media only screen and (min-width: 38em) {
-
 	
+	.lightbox-img {
+    width: 2	00%;
+}
+
 	.lightbox-img {
     display: block;
     width: 200%;
