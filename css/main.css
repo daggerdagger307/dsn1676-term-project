@@ -375,7 +375,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(200vh - 66px);     
+    top: calc(200vh - 40px);     
 }
 
 .shadow-split-3 {
@@ -385,7 +385,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(525vh - 66px); 
+    top: calc(525vh - 40px); 
 }
 
 .shadow-split-4 {
@@ -395,7 +395,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(575vh - 66px);    
+    top: calc(575vh - 40px);    
 }
 
 .hat-background {
