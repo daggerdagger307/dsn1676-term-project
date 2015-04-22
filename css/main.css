@@ -609,7 +609,7 @@ html {
     max-width: 20em;
     margin: 0 auto;
     position: relative;
-    top: 3em;
+    top: 2em;
     fill: white;
     align-content: center;
     -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
