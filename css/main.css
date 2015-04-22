@@ -427,15 +427,15 @@ html {
 
 .lightbox-img {
     display: block;
-    width: 200%;
+    width: 100%;
 }
 
 .lightbox-content {
     position: absolute;
-    top: 10%;
-    left: 2%;
+    top: 70%;
+    left: 30%;
     transform: translate(-100%, -100%);
-	background-color: red;
+	background-color: blue;
 }
 
 .lightbox[data-state="visible"] {
