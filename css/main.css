@@ -244,6 +244,25 @@ html {
     border-color: white;
 }
 
+.contact-info li {
+	display: inline-block;
+}
+	
+.instagram {
+    max-width: 4em;
+    margin: 0;  
+}
+
+.twitter {
+    max-width: 4em; 
+    margin: 0;
+}
+
+.facebook {
+    max-width: 4em;
+    margin: 0; 
+}
+
 .shadows {
     background-image: url(../images/shadowstest.svg); 
     background-size: 450px 210px;
@@ -343,37 +362,40 @@ html {
     height: 10em;
     width: 100%;
     background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(100vh - 96px);  
-    
+    top: calc(100vh - 66px);  
 }
 
 .shadow-split-2 {
     height: 10em;
     width: 100%;
     background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(200vh - 96px);     
+    top: calc(200vh - 66px);     
 }
 
 .shadow-split-3 {
     height: 10em;
     width: 100%;
     background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(300vh - 96px);     
+    top: calc(475vh - 66px); 
 }
 
 .shadow-split-4 {
     height: 10em;
     width: 100%;
     background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(400vh - 96px);     
+    top: calc(575vh - 66px);    
 }
 
 .hat-background {
@@ -382,8 +404,9 @@ html {
     background-size: cover;
     background-position: right;
     background-image: url(../images/hat-background.jpg);
-    width: 100%;
-    height: 100vh; 
+	background-repeat: repeat-y;
+    width: 100%; 
+	height: 275vh;
     overflow: hidden;
     position: relative;
     right: 0;
@@ -425,8 +448,6 @@ html {
 	list-style: none;
 }
 
-
-
 .lightbox {
     position: fixed;
     left: 100%;
@@ -444,14 +465,14 @@ html {
 
 .lightbox-img {
     display: block;
-    width: 100%;
+    width: 200%;
 }
 
 .lightbox-content {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -100%);
 }
 
 .lightbox[data-state="visible"] {
@@ -514,15 +535,57 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    background-image: url(../images/about-back.jpg);
+    background-image: url(../images/hat-background.jpg);
     width: 100%;
     height: 100vh; 
     overflow: hidden;
     position: relative;
     right: 0;
+	text-align: center;
 }
 
-.artwork {
+.about-text {
+	max-width: 40em;
+	color: white;
+	margin: 0 auto;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+}
+
+.daggerframe {
+	max-width: 300px;
+	color: white;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+	transform: translateY(0) translateX(0);
+    -webkit-animation: bob-frame 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes bob-frame {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+    }
+}
+
+@keyframes bob-frame {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.video {
     padding: 12%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -541,7 +604,7 @@ html {
     max-width: 20em;
     margin: 0 auto;
     position: relative;
-    top: calc(50vh - 350px);
+    top: 8em;
     fill: white;
     align-content: center;
     -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -612,43 +675,12 @@ html {
     transition: all 200ms ease-in-out;
 }
 
-/* .knives :hover #dagger-left {
-    transform: translateX(2em) rotate(45deg);
-    fill: black;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-
-.knives :hover #dagger-right {
-    transform: translateX(-2em) translateY(-.5em) rotate(-45deg);
-    fill: black;
-    -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-
-#dagger-dagger {
-    transform: translateY(0);
-    z-index: 200;
-}
-
-.knives :hover #dagger-dagger {
-    transform: translateY(-17em);
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    -webkit-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-} */
-
 .contact {
     padding: 12%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    background-image: url(../images/about-back.jpg);
+    background-image: url(../images/hat-background.jpg);
     width: 100%;
     height: 100vh; 
     overflow: hidden;
@@ -656,21 +688,194 @@ html {
     right: 0;
 }
 
+.contact-info {
+	list-style: none;
+	margin: auto 0;
+	color: white;
+	text-align: left;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+}
+
+.contact-logo {
+	max-width: 300px;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    transform: translateY(0), translateX(0);
+    -webkit-animation: paper 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes paper {
+    0% {
+        -webkit-transform: translateX(0) translateY(0);
+    }
+    100% {
+        -webkit-transform: translateX(30px) translateY(15px);
+    }
+}
+
+@keyframes paper {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(30px) translateY(15px);
+    }
+}
+
+.contact-info {
+	margin: 0 auto;
+}
+
+.contact-info li {
+	display: block;
+}
+
 .rtt {
     position: fixed;
-    bottom: 1em;
+    bottom: 10em;
     left: .5em;
     width: 5em;
     height: auto;
     z-index: 300000;
 }
 
-@media only screen and (min-width: 38em) {
+.footer {
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer-nav {
+        text-align: right;
+        padding-top: .8em;
+        padding-right: 5%;
+        margin: 0;
+        list-style-type: none;
+        overflow: hidden;
+        text-decoration: none;
+        text-align: right;
+    }
+
+.footer li {
+    margin: 0;
+    display: inline-block;
     
+ }
+
+.instagram {
+    max-width: 3em;
+    margin: 0;  
+	background-image: url(../images/instagram.svg);
+}
+
+.twitter {
+    max-width: 3em; 
+    margin: 0;
+}
+
+.facebook {
+    max-width: 3em;
+    margin: 0; 
+}
+
+.nav {
+    margin: 0;
+    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+	
+	.lightbox-img {
+    display: block;
+    width: 100%;
+}
+    
+	.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+	
+	.hat-background {
+    padding: 12%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url(../images/hat-background.jpg);
+    width: 100%; 
+	height: calc(200vh - 300px);
+    overflow: hidden;
+    position: relative;
+    right: 0;
+}
+	
+	.cross {
+    max-width: 20em;
+    margin: 0 auto;
+    position: relative;
+    top: 4em;
+    fill: white;
+    align-content: center;
+    -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    transform: translateY(0);
+    -webkit-animation: bob-pair 2s ease-in-out infinite alternate;
+}
+	
+	.shadow-split-3 {
+    height: 10em;
+    width: 100%;
+    background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
+    z-index: 20000;
+    position: absolute;
+    top: calc(350vh - 66px); 
+	
+}
+	
+	.shadow-split-4 {
+    height: 10em;
+    width: 100%;
+    background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
+    z-index: 20000;
+    position: absolute;
+    top: calc(450vh - 66px);    
+}
+	
+	.contact-info {
+	margin: 0 auto;
+	padding-top: 15em;
+}
+
+.contact-info li {
+	display: block;
+}
+	
+	.thumbnails-2 {
+	padding: 0;
+	}
+	
     .bj-wrapper {
         position: relative;
         width: 200px;
-        top: -80px;
+        top: 40px;
         left: calc(50% - 100px);
         height: 200px; 
 }
@@ -679,7 +884,7 @@ html {
         display: inline-block;
         margin: 0 auto;
         position: relative;
-        top: -80px;
+        top: 80px;
 }
     
     .shadows {
@@ -713,9 +918,28 @@ html {
     transform: translateY(-200px)
     }
 }
- 
-
+	
 @media only screen and (min-width: 60em) {
+	
+	.shadow-split-3 {
+    height: 10em;
+    width: 100%;
+    background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
+    z-index: 20000;
+    position: absolute;
+    top: 350vh;
+}
+	
+	.shadow-split-4 {
+    height: 10em;
+    width: 100%;
+    background-image: url(../images/shadow-split.svg);
+	background-repeat: repeat-x;
+    z-index: 20000;
+    position: absolute;
+    top: 450vh;
+}
     
     .shadows {
         background-image: url(../images/shadowstest.svg); 
