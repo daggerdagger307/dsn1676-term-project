@@ -759,12 +759,11 @@ html {
 .footer-nav {
         text-align: right;
         padding-top: .8em;
-        padding-right: 5%;
+        padding-right: 2%;
         margin: 0;
         list-style-type: none;
         overflow: hidden;
         text-decoration: none;
-        text-align: right;
     }
 
 .footer li {
@@ -773,19 +772,33 @@ html {
     
  }
 
+.copy {
+	 text-align: center;
+     padding-top: .8em;
+     padding-right: 2%;
+     margin: 0;
+     list-style-type: none;
+     overflow: hidden;
+     text-decoration: none;
+
+}
+
 .instagram {
-    max-width: .5em;
+    width: 3em;
     margin: 0;  
+	padding-top: .5em;
 }
 
 .twitter {
-    max-width: .5em; 
+    width: 3em; 
     margin: 0;
+	padding-top: .5em;
 }
 
 .facebook {
-    max-width: .5em;
+    width: 3em;
     margin: 0; 
+	padding-top: .5em;
 }
 
 .nav {
