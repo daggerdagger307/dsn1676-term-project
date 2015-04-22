@@ -365,7 +365,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: 100vh;  
+    top: calc(100vh - 40px);  
 }
 
 .shadow-split-2 {
