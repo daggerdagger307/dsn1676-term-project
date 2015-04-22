@@ -433,7 +433,7 @@ html {
 .lightbox-content {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 5%;
     transform: translate(-100%, -100%);
 }
 
