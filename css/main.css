@@ -585,6 +585,10 @@ html {
     }
 }
 
+.thumbnails-2 {
+	padding: 0;
+}
+
 .video {
     padding: 12%;
     background-repeat: no-repeat;
@@ -770,18 +774,17 @@ html {
  }
 
 .instagram {
-    max-width: 3em;
+    max-width: .5em;
     margin: 0;  
-	background-image: url(../images/instagram.svg);
 }
 
 .twitter {
-    max-width: 3em; 
+    max-width: .5em; 
     margin: 0;
 }
 
 .facebook {
-    max-width: 3em;
+    max-width: .5em;
     margin: 0; 
 }
 
