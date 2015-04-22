@@ -433,8 +433,9 @@ html {
 .lightbox-content {
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 2%;
     transform: translate(-100%, -100%);
+	background-color: blue;
 }
 
 .lightbox[data-state="visible"] {
