@@ -365,7 +365,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(100vh - 66px);  
+    top: 100vh;  
 }
 
 .shadow-split-2 {
@@ -538,7 +538,7 @@ html {
     background-position: right;
     background-image: url(../images/hat-background.jpg);
     width: 100%;
-    height: 110vh; 
+    height: 100vh; 
     overflow: hidden;
     position: relative;
     right: 0;
