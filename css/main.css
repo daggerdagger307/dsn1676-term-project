@@ -544,6 +544,18 @@ html {
 	text-align: center;
 }
 
+.daggerframe {
+	max-width: 100px;
+	color: white;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+	transform: translateY(0) translateX(0);
+    -webkit-animation: bob-frame 2s ease-in-out infinite alternate;
+}
+
 .about-text {
 	max-width: 40em;
 	color: white;
@@ -553,18 +565,6 @@ html {
     -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-}
-
-.daggerframe {
-	max-width: 300px;
-	color: white;
-	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-	transform: translateY(0) translateX(0);
-    -webkit-animation: bob-frame 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes bob-frame {
@@ -705,7 +705,8 @@ html {
 }
 
 .contact-logo {
-	max-width: 300px;
+	max-width: 100px;
+	margin: 0 auto;
 	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -812,6 +813,18 @@ html {
 }
 
 @media only screen and (min-width: 38em) {
+	
+	.daggerframe {
+	max-width: 300px;
+	color: white;
+	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
+	transform: translateY(0) translateX(0);
+    -webkit-animation: bob-frame 2s ease-in-out infinite alternate;
+}
 	
 	.lightbox-img {
     display: block;
