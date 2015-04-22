@@ -358,46 +358,6 @@ html {
     width: 500px;
 }
 
-.shadow-split {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(100vh - 40px);  
-}
-
-.shadow-split-2 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(200vh - 40px);     
-}
-
-.shadow-split-3 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(525vh - 40px); 
-}
-
-.shadow-split-4 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(625vh - 40px); 
-}
-
 .hat-background {
     padding: 12%;
     background-repeat: no-repeat;
@@ -417,6 +377,7 @@ html {
     opacity: 0;
     transition: all 450ms ease-in;
 	margin: auto 0;
+	padding: 0;
 }
 
 .js-fade {
@@ -815,18 +776,22 @@ html {
 
 @media only screen and (min-width: 38em) {
 	
+	.thumbnails {
+    top: -3em;
+}
+		
 	.daggerframe {
 	max-width: 300px;
-	color: white;
-	-webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-	transform: translateY(0) translateX(0);
-    -webkit-animation: bob-frame 2s ease-in-out infinite alternate;
+}
+	.about-b {
+		padding-top: calc(35vh - 50%);
 }
 	
+	.contact-logo {
+	max-width: 300px;
+	padding-top: calc(20vh - 350px);
+}
+
 	.lightbox-img {
     display: block;
     width: 100%;
@@ -846,47 +811,15 @@ html {
     background-position: right;
     background-image: url(../images/hat-background.jpg);
     width: 100%; 
-	height: calc(200vh - 300px);
+	height: 60em;
     overflow: hidden;
     position: relative;
     right: 0;
 }
 	
 	.cross {
-    max-width: 20em;
-    margin: 0 auto;
-    position: relative;
-    top: 4em;
-    fill: white;
-    align-content: center;
-    -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    -o-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
-    transform: translateY(0);
-    -webkit-animation: bob-pair 2s ease-in-out infinite alternate;
-}
-	
-	.shadow-split-3 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(350vh - 66px); 
-	
-}
-	
-	.shadow-split-4 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: calc(450vh - 66px);    
+    top: 12em;
+ 
 }
 	
 	.contact-info {
@@ -951,26 +884,14 @@ html {
 	
 @media only screen and (min-width: 60em) {
 	
-	.shadow-split-3 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: 350vh;
+	.cross {
+    top: 5em;
+}
+
+	.thumbnails {
+    top: 2em;
 }
 	
-	.shadow-split-4 {
-    height: 10em;
-    width: 100%;
-    background-image: url(../images/shadow-split.svg);
-	background-repeat: repeat-x;
-    z-index: 20000;
-    position: absolute;
-    top: 450vh;
-}
-    
     .shadows {
         background-image: url(../images/shadowstest.svg); 
         background-size: 340px 220px;
