@@ -395,7 +395,7 @@ html {
 	background-repeat: repeat-x;
     z-index: 20000;
     position: absolute;
-    top: calc(675vh - 40px);    
+    top: calc(625vh - 40px); 
 }
 
 .hat-background {
