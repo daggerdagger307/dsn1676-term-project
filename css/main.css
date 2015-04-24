@@ -9,7 +9,6 @@ html {
   padding: 0;
   box-sizing: border-box;
 
-
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -19,7 +18,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 
 .body {
     margin: 0;
@@ -797,12 +795,11 @@ html {
         list-style-type: none;
         overflow: hidden;
         text-decoration: none;
-    }
+}
 
 .footer li {
     margin: 0;
-    display: inline-block;
-    
+    display: inline-block; 
  }
 
 .copy {
@@ -893,35 +890,34 @@ html {
 }
 	
 	.hat-background {
-    padding: 12%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    background-image: url(../images/hat-background.jpg);
-    width: 100%; 
-	height: 60em;
-    overflow: hidden;
-    position: relative;
-    right: 0;
+		padding: 12%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		background-image: url(../images/hat-background.jpg);
+		width: 100%; 
+		height: 60em;
+		overflow: hidden;
+		position: relative;
+		right: 0;
 }
 	
 	.cross {
-    top: 12em;
- 
+    	top: 12em;
 }
 	
 	.contact-info {
-	margin: 0 auto;
-	padding-top: 15em;
+		margin: 0 auto;
+		padding-top: 15em;
 }
 
-.contact-info li {
-	display: block;
+	.contact-info li {
+		display: block;
 }
 	
 	.thumbnails-2 {
-	padding: 0;
-	}
+		padding: 0;
+}
     
     .shadows {
         background-image: url(../images/shadowstest.svg); 
@@ -959,11 +955,11 @@ html {
 
 	
 	.cross {
-    top: 5em;
+    	top: 5em;
 }
 
 	.thumbnails {
-    top: 2em;
+    	top: 2em;
 }
 	
     .shadows {
@@ -1032,10 +1028,3 @@ html {
     transform: translateY(-330px)
     }
 }
- 
-
-
-
-
-
-

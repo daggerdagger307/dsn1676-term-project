@@ -88,4 +88,3 @@ $rtt.waypoint(function (direction) {
     $rtt.removeClass('js-rtt');
     }
 }, { offset: '50%' });
-
