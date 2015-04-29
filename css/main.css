@@ -388,7 +388,7 @@ html {
     padding: 0;
     text-align: center;
     position: relative;
-    top: calc(50vh - 350px);
+    top: calc(50vh - 250px);
      -webkit-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -moz-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
     -ms-filter: drop-shadow(-10px 10px 6px rgba(0,0,0,.6));
@@ -887,7 +887,7 @@ html {
 	}
 	
 	.lightbox-img {
-    width: 2	00%;
+    width: 200%;
 }
 
 	.lightbox-img {
@@ -987,11 +987,11 @@ html {
 
 	
 	.cross {
-    	top: 5em;
+    	top: 6em;
 }
 
 	.thumbnails {
-    	top: 2em;
+    	top: 20;
 }
 	
     .shadows {
